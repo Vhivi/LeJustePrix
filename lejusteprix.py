@@ -2,10 +2,11 @@
 # -*- coding: utf-8 -*-
 
 # Projet de "Juste prix",
-# Le programme génère un prix rond aléatoire. Le but pour l’utilisateur est de 
-# deviner le prix. Chaque fois que l’utilisateur se trompe, l’ordinateur lui 
-# dit si c’est plus ou moins que le prix qu’il a donné. À chaque aide de 
-# l’ordinateur, le score final atteignable par le joueur baisse.
+# Le programme génère un prix entier aléatoire dans une fourchette définie par 
+# l'utilisateur. Le but pour l’utilisateur est de deviner le prix. Chaque fois 
+# que l’utilisateur se trompe, l’ordinateur lui dit si c’est plus ou moins que 
+# le prix qu’il a donné. À chaque aide de l’ordinateur, le score final 
+# atteignable par le joueur baisse.
 
 # Au programme, vous apprendrez à saisir des entrées clavier par un utilisateur,
 # créer des fonctions pour valider que le nombre entré est bien un nombre 
@@ -14,7 +15,7 @@
 
 import random
 
-# Génération aléatoire d'un prix rond.
+# Génération aléatoire d'un prix entier.
 def generation_alea_prix(prixmax):
     return random.randint(0, prixmax)
 
