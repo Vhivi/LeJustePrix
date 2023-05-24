@@ -23,7 +23,7 @@ def generation_alea_prix(prixmax):
 
 def main():
     # Demander le prix max.
-    prixmax = int(input('Quel est le prix maximum de la session de jeu ?'))
+    prixmax = int(input("Quel est le prix maximum de la session de jeu ?"))
 
     justeprix = generation_alea_prix(prixmax)
 
@@ -35,24 +35,25 @@ def main():
     scoremax = 10
     scoreuser = scoremax
     while prixuser != justeprix:
-        prixuser = int(input('Quel est selon vous le prix ?'))
+        prixuser = int(input("Quel est selon vous le prix ?"))
         if scoreuser == scoremin:
-            print('Votre score est de ', scoreuser)
-            print('Vous avez perdu !')
-            print('Le juste prix est de', justeprix)
+            print("Votre score est de ", scoreuser)
+            print("Vous avez perdu !")
+            print("Le juste prix est de", justeprix)
             break
 
         if prixuser == justeprix:
-            print('Bravo !!! Vous avez découvert le juste prix.')
-            print('Score :', scoreuser)
+            print("Bravo !!! Vous avez découvert le juste prix.")
+            print("Score :", scoreuser)
             break
 
         if prixuser < justeprix:
-            print('C\'est plus !')
+            print("C'est plus !")
             scoreuser = scoreuser - 1
 
         if prixuser > justeprix:
-            print('C\'est moins !')
+            print("C'est moins !")
             scoreuser = scoreuser - 1
+
 
 main()
